@@ -28,6 +28,7 @@ int main(int argc, CHAR* argv[]){
 	PIMAGE_THUNK_DATA ThunkData = {};
 	DWORD64 thunk = NULL;
 	DWORD64 IATRawOffset = NULL;
+	BOOL Status;
 
 	if (argc < 2) {
 		PrintUsage();
@@ -51,8 +52,11 @@ int main(int argc, CHAR* argv[]){
 
 	FileSize = GetFileSize(hFile, NULL);
 	FileData = HeapAlloc(GetProcessHeap(), 0, FileSize);
-	ReadFile(hFile, FileData, FileSize, &bytesRead, NULL);
-
+	Status = ReadFile(hFile, FileData, FileSize, &bytesRead, NULL);
+	if (!Status) {
+		printf("Failed To Read Data From File %s Error Code %x\n", argv[1], GetLastError());
+		return -1;
+	}
 	dosHeader = (PIMAGE_DOS_HEADER)FileData;
 
 	imageNTHeaders = (PIMAGE_NT_HEADERS)((DWORD64)FileData + dosHeader->e_lfanew);

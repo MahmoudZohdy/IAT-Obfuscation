@@ -194,7 +194,6 @@ void NTAPI __stdcall TLSCallbacks(PVOID DllHandle, DWORD dwReason, PVOID Reserve
     GetModuleHandleAAddr = (_GetModuleHandleA)GetFunctionAddressByName(kernel32Base, GetModuleHandleName);
    
     MainModuleBase = GetModuleHandleAAddr(NULL);
-    //BYTE* MainModuleBase = (BYTE*)MainModuleBase1;
 
     PIMAGE_NT_HEADERS pSourceHeaders = (PIMAGE_NT_HEADERS)((DWORD64)MainModuleBase + ((PIMAGE_DOS_HEADER)MainModuleBase)->e_lfanew);
 
