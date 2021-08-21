@@ -15,7 +15,7 @@ this obfuscation technique work by replacing every two api in the same DLL with 
 
 # Demo 
 
-this is the output of simple injection technique in IDA Pro(OpenProcess, VirtualAllocEx, WriteProcessMemory, CreateRemoteThread)
+this is the output of simple injection technique to Load Dll in Remote Process (OpenProcess, VirtualAllocEx, WriteProcessMemory, CreateRemoteThread)
 
 UnObfuscated Version
 ![Clean](https://github.com/MahmoudZohdy/IAT-Obfuscation/blob/main/images/UnObfuscatedInjection.PNG)
