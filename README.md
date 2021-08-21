@@ -10,4 +10,4 @@ This Project is for IAT Obfuscation to make static analysis of the program harde
 
 # How it work
 this obfuscation technique work by replacing every two api in the same DLL with each other 
-![Is such a thing even possible?](https://github.com/MahmoudZohdy/IAT-Obfuscation/blob/main/images/IAT-Obfuscation.PNG)
+![](https://github.com/MahmoudZohdy/IAT-Obfuscation/blob/main/images/IAT-Obfuscation.PNG)
