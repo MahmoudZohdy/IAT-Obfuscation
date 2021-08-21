@@ -13,6 +13,7 @@ void PrintUsage() {
 	printf("IAT-Obfuscation.exe <Executable to protect> <Output File Name>\n");
 	return;
 }
+
 int main(int argc, CHAR* argv[]){
 
 	HANDLE hFile = NULL;
