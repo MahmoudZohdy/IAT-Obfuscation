@@ -1,6 +1,6 @@
 # IAT-Obfuscation
 
-This Project is for IAT Obfuscation to make static analysis of the program harder, and to make it harder for recognize the sequence of API for malicious activity staticly.
+This Project is for IAT Obfuscation to make static analysis of a program harder, and to make it harder for recognize and extract the sequence of API for malicious activity staticly.
 
 # How To Use:
 ```
