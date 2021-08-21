@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IAT-Obfuscation", "IAT-Obfuscation\IAT-Obfuscation.vcxproj", "{55C0A098-4E6B-4E96-B07A-157E0BD5B866}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55C0A098-4E6B-4E96-B07A-157E0BD5B866}.Debug|x64.ActiveCfg = Debug|x64
+		{55C0A098-4E6B-4E96-B07A-157E0BD5B866}.Debug|x64.Build.0 = Debug|x64
+		{55C0A098-4E6B-4E96-B07A-157E0BD5B866}.Debug|x86.ActiveCfg = Debug|Win32
+		{55C0A098-4E6B-4E96-B07A-157E0BD5B866}.Debug|x86.Build.0 = Debug|Win32
+		{55C0A098-4E6B-4E96-B07A-157E0BD5B866}.Release|x64.ActiveCfg = Release|x64
+		{55C0A098-4E6B-4E96-B07A-157E0BD5B866}.Release|x64.Build.0 = Release|x64
+		{55C0A098-4E6B-4E96-B07A-157E0BD5B866}.Release|x86.ActiveCfg = Release|Win32
+		{55C0A098-4E6B-4E96-B07A-157E0BD5B866}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98A32D8C-D590-4BAD-9752-82156F351744}
+	EndGlobalSection
+EndGlobal
