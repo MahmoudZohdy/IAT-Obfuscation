@@ -75,6 +75,8 @@ int main(int argc, CHAR* argv[]){
 		sectionLocation += sectionSize;
 	}
 
+	printf("Changing the IAT\n");
+
 	//DWORD64 RVAtoOffsetConversion = (DWORD64)importSection->PointerToRawData - (DWORD64)importSection->VirtualAddress;
 	DWORD64 StartIATOffset = (DWORD64)importDirectoryRVA - (DWORD64)importSection->VirtualAddress + (DWORD64)importSection->PointerToRawData;
 
@@ -115,6 +117,9 @@ int main(int argc, CHAR* argv[]){
 	}
 	CloseHandle(hFile);
 
+
+	printf("Writting Obfuscated File To disck\n");
+
 	HANDLE hOutputFile = CreateFileA(OutputFileName, GENERIC_WRITE, 0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
 
 	if (hOutputFile == INVALID_HANDLE_VALUE) {
@@ -130,10 +135,6 @@ int main(int argc, CHAR* argv[]){
 	}
 
 	printf("Finished\n");
-
-	return 0;
-
-
 
     
     return 0;
